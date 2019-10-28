@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+<gridster [options]="options">
+  <gridster-item [item]="item" *ngFor="let item of dashboard">
+    <div style="height: 26px; background-color: darkgray; color: blanchedalmond;">
+      Kø
+      <i style="text-align: right;" class="icofont-gear-alt"></i>
+    </div>
+  </gridster-item>
+</gridster>
